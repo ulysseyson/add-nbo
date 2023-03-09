@@ -1,9 +1,9 @@
-TARGET=byte-order-test
+TARGET=add-nbo
 CXXFLAGS=-g
 
 all: $(TARGET)
 
-$(TARGET): main.o
+$(TARGET): hw.o
 	$(LINK.cpp) $^ $(LOADLIBES) $(LDLIBS) -o $@
 
 clean:
